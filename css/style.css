@@ -152,9 +152,79 @@ body {
 .r-bag{
     background-color: rgba(198, 196, 196, 0.213);
 }
-.about-img{
-    height: ;
+.about-logo{
+    margin-left: 35%;
+    margin-top: 10%;
+    margin-bottom: 20%;
 }
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+
+  .column {
+    -ms-flex: 25%; 
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .gallery-image{
+    width: 100%;
+    cursor: pointer;
+    transition: .7s;
+  }
+  .gallery-image:hover{
+    width: 50%;
+    opacity: .8;
+  }
+
+  .shop-footer {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    padding: 50px;
+}
+
+.footer-sec {
+    width: 400px;
+    margin: 10px 10px;
+    border-right: 2px solid #fb5f04;
+}
+
+.footer-sec-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-data {
+    margin-left: 20px;
+}
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 @keyframes logo {
     0% {
         opacity: 0;
