@@ -30,3 +30,7 @@ function ChangeThem2(){
         BodyElement.className = "dark-them"
 
 }
+
+function Order(){
+    alert('Your Order Add Successfully 🎊🎉')
+}
