@@ -149,7 +149,12 @@ body {
     background-color: #323232;
     color: #fff;
 }
-
+.r-bag{
+    background-color: rgba(198, 196, 196, 0.213);
+}
+.about-img{
+    height: ;
+}
 @keyframes logo {
     0% {
         opacity: 0;
