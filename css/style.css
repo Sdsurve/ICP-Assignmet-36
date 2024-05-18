@@ -84,7 +84,7 @@ body {
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
 
-    animation: logo 2s 1;
+    animation: logo 3s 1;
 }
 
 .btn-container {
@@ -102,6 +102,7 @@ body {
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     transition: .5s;
+    animation: button 3s 1;
 }
 
 .btn-1:hover {
@@ -148,6 +149,22 @@ body {
 .dark-them {
     background-color: #323232;
     color: #fff;
+}
+.img-card-2{
+    cursor: pointer;
+    transition: 0.5s;
+    height: 400px;
+}
+.img-card-2:hover{
+      transform: translateY(-10px);
+      background-color: #ec9717;
+}
+.card-body-3{
+   transition: .4s;
+    cursor: pointer;
+}
+.card-body-3:hover{
+    background-color: #ec9717;
 }
 .r-bag{
     background-color: rgba(198, 196, 196, 0.213);
@@ -228,17 +245,17 @@ body {
 @keyframes logo {
     0% {
         opacity: 0;
-        margin-bottom: -180%;
+        margin-top: -80%;
     }
 
     30% {
-        opacity: .5;
-        margin-bottom: -175%;
+        opacity: 0;
+        margin-top: -75%;
     }
 
     85% {
-        opacity: 1;
-        margin-bottom: -170%;
+        opacity: .5;
+        margin-top: -70%;
     }
 }
 
@@ -271,5 +288,18 @@ body {
 
     85% {
         margin-bottom: -10%;
+    }
+}
+@keyframes button {
+    0% {
+opacity: 0;
+    }
+
+    30% {
+       opacity: .4;
+    }
+
+    85% {
+       opacity: .6;
     }
 }
