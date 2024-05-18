@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>contact us</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap');
+    body{
+background-color:#eef3f7;
+font-family: "Space Grotesk", sans-serif;
+            font-optical-sizing: auto;
+}
+.container{
+    width:60%;
+    padding:45px;
+    border-radius:0;
+    position:abolute;
+    left:50%;
+    top:50%;
+    transform: traslate(-50%, -50%);
+}
+.col-md-7{
+    padding:20px;
+}
+.col-md-5{
+    background-color: #fff;
+    padding: 20px;
+    color:#4d4d4d;
+}
+.form-control{
+    height:52px;
+    background:#4d4d4d;
+    color:#000;
+    font-size: 14px;
+    border-radius: 2px;
+    box-sizing: none important ;
+    border:1px solid black;
+
+}
+.bi{
+    font-size:20px;
+
+}
+.d-flex p{
+    font-size:18px;
+    padding-left: 18px;
+}
+.butn
+{
+    background-color: #fb5f04;
+}
+.bag{
+    background-color: #fb5f04;
+}
+.ha{
+    color: #fb5f04;
+}
+@media only screen and(max-width:600px){
+    .container{
+        width:100%;
+        position:absolute;
+        left:50%;
+        top:80%;
+    }
+}
+  </style>
+</head>
+
+
+<body id="body">
+    <nav class="navbar navbar-expand-lg sticky-top shadow bg-body-tertiary mt-2">
+      <div class="container-fluid mx-5">
+        <a class="navbar-brand ms-md-5 ms-md-0 fs-3 ha" href="#"><img src="./../images/logo/logo.png" height="50px"
+            alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link ms-md-2 ms-md-0 active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle ms-md-2 ms-md-0" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./../pages/maincourse.html">Maincourse</a></li>
+                <li><a class="dropdown-item" href="./../pages/Stater.html">Stater</a></li>
+                <li><a class="dropdown-item" href="./../pages/dessert.html">Dessert</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-md-2 ms-md-0" href="./../pages/review.html">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-md-2 ms-md-0" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-md-2 ms-md-0" href="./../pages/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-md-2 ms-md-0" href="./../pages/login.html">Login/Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-md-2 ms-md-0 me-4 rounded border bag  text-center" href="./../pages/orderNow.html">Order
+                Now</a>
+            </li>
+            <li class="nav-item">
+              <img src="./../images/brightness (1).png" class="me-4 them" id="light" onclick="ChangeThem1()" height="30px"
+                alt="">
+            </li>
+            <li class="nav-item">
+              <img src="./../images/night-mode.png" class="them" id="dark" onclick="ChangeThem2()" height="30px" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <div class="container">
+    <div class="row shadow">
+      <div class="col-md-7">
+        <h4>GET IN TOUCH</h4>
+        <hr>
+        <div class="mb-3">
+          <p for="exampleFormControlInput1" class="form-label">Name :</p>
+          <input type="text" placeholder="Enter Your Name" required class="mb-2 p-2 px-3 rounded w-100 border border-black" >
+        </div>
+        <div class="mb-3">
+          <p for="exampleFormControlInput1" class="form-label">Email :</p>
+          <input type="text" placeholder="Enter Your Email" required class="mb-2 p-2 px-3 rounded w-100 border border-black" >
+        </div>
+        <div class="mb-3">
+          <p for="exampleFormControlInput1" class="form-label">Contact Number :</p>
+          <input type="number" required class="mb-2 p-2 px-3 rounded w-100 border border-black" id="exampleFormControlInput1" placeholder="Enter your number">
+        </div>
+        <div class="mb-3">
+          <p for="exampleFormControlTextarea1" class="form-label">Message :</p>
+          <textarea required class="mb-2 p-2 px-3 rounded w-100 border border-black" id="exampleFormControlTextarea1" rows="3" placeholder="Write Your Message"></textarea>
+          <button type="button" class="px-5 py-2 rounded border bag" onclick="alert('Your Message Send Successfully')">Submit</button>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <H1>CONTACT</H1>
+        <DIV class="mt-5">
+          <div class="d-flex">
+            <i class="bi bi-geo-alt-fill"></i>
+            <p>Address: Aswad
+                Restaurants,<br>
+                Karanja Road Shelubazar,<br>Dist. Washim</p>
+          </div>
+          <hr>
+          <div class="d-flex">
+            <i class="bi bi-telephone-fill"></i>
+            <p> Mobile: 9767031439</p>
+          </div>
+          <hr>
+          <div class="d-flex">
+            <i class="bi bi-envelope-at-fill"></i>
+            <p>Gmail: xyz@gmail.com</p>
+          </div>
+          <hr>
+          <div class="d-flex">
+            <i class="bi bi-browser-chrome"></i>
+            <p>www.Aswad-resto.com</p>
+          </div>
+          <hr>
+
+        </DIV>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <div class="shop-footer">
+    <div class="footer-sec">
+        <p class="footer-sec-title"> Quick Links : </p>
+        <div class="footer-data">
+            <p><a href="index.html">Home </a></p>
+            <p><a href="#">About us</a></p>
+            <p><a href="./pages/contact.html">Contact us</a>
+            </p>
+
+            <p><a href="./pages/login.html"> Login </a>
+            <p><a href="./pages/orderNow.html"> Order Now</a>
+        </div>
+    </div>
+    <div class="footer-sec">
+        <p class="footer-sec-title"> Social :</p>
+        <div class="footer-data">
+            <p> <i class="fa-solid fa-envelope"></i>
+                &nbsp; &nbsp; <a href="mailto:sdsurve55555@gmail.com">asvadresto37@gmail.com</a>
+            </p>
+
+            <p> <i class="fa-solid fa-phone"></i>
+                &nbsp; &nbsp; <a href="tel:+917820999126" class="footer-anchor"> +91-9767031439</a>
+            </p>
+            <p> <i class="fa-brands fa-facebook"></i> &nbsp;
+                &nbsp; Facebook </p>
+            <p> <i class="fa-brands fa-instagram"></i> &nbsp;
+                &nbsp; Instagram</p>
+        </div>
+    </div>
+    <div class="footer-sec">
+        <p class="footer-sec-title"> Contact us :</p>
+        <div class="footer-data">
+
+            <p><i class="fa-solid fa-location-dot"></i>
+                &nbsp; &nbsp; <a href="https://maps.app.goo.gl/N3ngnED1vBDYVvj19" target="blank"> Aswad
+                    Restaurants,<br>
+                    Karanja Road Shelubazar,<br>Dist. Washim
+                </a>
+            </p>
+            <p> <i class="fa-solid fa-envelope"></i>
+                &nbsp; &nbsp; <a href="mailto:sdsurve5555@gmail.com">asvadresto37@gmail.com</a>
+            </p>
+
+            <p> <i class="fa-solid fa-phone"></i>
+                &nbsp; &nbsp; <a href="tel:+917820999126"> +91-9767031439</a>
+            </p>
+        </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="./../js/style.js"></script>
+
+</body>
+
+</html>
