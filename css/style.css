@@ -227,6 +227,10 @@ body {
 .footer-data {
     margin-left: 20px;
 }
+.footer-data p a {
+    text-decoration: none;
+    color: black;
+}
   @media screen and (max-width: 800px) {
     .column {
       -ms-flex: 50%;
